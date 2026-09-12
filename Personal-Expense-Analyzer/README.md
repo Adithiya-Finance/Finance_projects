@@ -1,38 +1,92 @@
-# Finance Calculator
+# Personal Expense Analyzer
 
-income = 1000
-expense = 300
-remaining = income - expense
-print(remaining)
+## Project Overview
 
+Built a Python-based Personal Expense Analyzer to analyze personal spending and generate useful financial insights from expense records.
 
-#SI and CI Calculator:
+The project calculates total and average expenses, identifies the highest and lowest expenses, and generates category-wise spending summaries.
 
-Enter_Principal = int(input("Enter the principal: "))
-Enter_annual_interest = float(input("Enter the annual interest rate: "))
-Enter_Year = int(input("Enter Year: "))
+## Objectives
 
-simple_interest = Enter_Principal*Enter_annual_interest*Enter_Year/100
-Total_amount = simple_interest + Enter_Principal
-print(simple_interest)
-print(Total_amount)
+- Calculate total expenses
+- Calculate average expenses
+- Identify the highest expense
+- Identify the lowest expense
+- Generate category-wise expense summaries
+- Structure expense data using Python data structures
+- Use reusable functions for financial calculations
 
-principal = int(input("Enter Principal: "))
-rate = float(input("Enter the annual interest rate: "))
-time = int(input("Enter the time: "))
+## Dataset
 
-compound_amount = principal * (1 + rate / 100) ** time
-compound_interest = compound_amount - principal
+The project analyzes:
 
-print(compound_interest)
-print(compound_amount)
+- **4 expense records**
+- **3 expense categories**
+- Expense fields:
+  - Date
+  - Category
+  - Amount
 
-#Expense calculator
+## Key Results
 
-expense= int(input("Enter Expense: "))
-expense2 = int(input("Enter Expense2: "))
-expense3 = int(input("Enter Expense3: "))
+| Metric | Result |
+|---|---:|
+| Total Expenses | 25,000 |
+| Average Expense | 6,250 |
+| Highest Expense | Rent – 15,000 |
+| Lowest Expense | Food – 2,000 |
 
-Total = expense + expense2 + expense3
-print(input(f'your total expenses is {Total}'))
+### Category Summary
 
+| Category | Total |
+|---|---:|
+| Food | 7,000 |
+| Travel | 3,000 |
+| Rent | 15,000 |
+
+## Python Concepts Used
+
+- Variables
+- Data Types
+- Lists
+- Tuples
+- Sets
+- Dictionaries
+- `for` loops
+- `if/elif/else`
+- Functions
+- Parameters and Arguments
+- `return`
+- Input Validation
+- `try/except`
+- Exception Handling
+
+## Functions Developed
+
+### `calculate_total()`
+Calculates the total amount across all expense records.
+
+### `calculate_average()`
+Calculates the average expense.
+
+### `find_highest()`
+Identifies the expense with the highest amount.
+
+### `find_lowest()`
+Identifies the expense with the lowest amount.
+
+### `category_summary()`
+Groups expenses by category and calculates category-wise totals.
+
+## Example Output
+
+```text
+Total expenses: 25000
+Average expense: 6250.0
+Highest expense: {'date': '2026-01-15', 'category': 'Rent', 'amount': 15000}
+Lowest expense: {'date': '2026-01-20', 'category': 'Food', 'amount': 2000}
+
+Category Summary:
+Food : 7000
+Travel : 3000
+Rent : 15000
